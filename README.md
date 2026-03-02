@@ -22,6 +22,6 @@ con frontend, backend en PHP y base de datos MySQL.
 - Aplicación levantada en entorno local y expuesta para acceso remoto
 
 ## Autor
-Luis Ángel Pérez Estrada
-Iván Navarrete Tepozán
-Leslie Alejandra Flores Pérez
+- Luis Ángel Pérez Estrada
+- Iván Navarrete Tepozán
+- Leslie Alejandra Flores Pérez
