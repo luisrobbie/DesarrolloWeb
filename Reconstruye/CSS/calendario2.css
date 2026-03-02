@@ -1,0 +1,155 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            background-color:rgb(234, 238, 244);
+            padding: 20px;
+        }
+        .titulo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            color:rgb(0, 40, 101);
+        }
+        .calendar-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .calendar {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(90, 109, 138, 0.1);
+            padding: 20px;
+            flex: 1;
+            min-width: 300px;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .calendar-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color:rgb(0, 40, 101);
+        }
+        .calendar-nav {
+            display: flex;
+            gap: 10px;
+        }
+        .calendar-nav button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            color: #5a6d8a;
+        }
+        .calendar-weekdays {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #5a6d8a;
+        }
+        .calendar-days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+        .calendar-day {
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .calendar-day:hover {
+            background-color: #e6f0ff;
+        }
+        .calendar-day.empty {
+            background-color: transparent;
+            cursor: default;
+        }
+        .calendar-day.today {
+            background-color: #e6f0ff;
+            font-weight: bold;
+        }
+        .calendar-day.has-appointment {
+            background-color: #d4e3ff;
+            color: #003366;
+            font-weight: bold;
+        }
+        .calendar-day.selected {
+            background-color: #003366;
+            color: white;
+        }
+        .appointments-container {
+            flex: 2;
+            min-width: 300px;
+        }
+        .appointments-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color:rgb(0, 40, 101);
+        }
+        .citas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .cita-card {
+            background-color: rgb(159, 192, 221);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(90, 109, 138, 0.1);
+            border-left: 5px solid #5a6d8a;
+            transition: transform 0.3s ease;
+        }
+        .cita-card:hover{
+            transform: translateY(-3px);
+        }
+        .cita-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #5a6d8a;
+            font-weight: bold;
+        }
+        .cita-header h3 {
+            margin: 0;
+            color:rgb(0, 0, 0);
+        }
+        .cita-status {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .cita-notes {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 8px;
+            color: #6a7b8f;
+            font-style: italic;
+        }
+        .pendiente .cita-status {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .confirmada .cita-status {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .cancelada .cita-status {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .no-appointments {
+            text-align: center;
+            color: #6a7b8f;
+            font-style: italic;
+            padding: 20px;
+        }

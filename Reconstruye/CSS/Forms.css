@@ -1,0 +1,138 @@
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../IMG/Fondo.png");
+    background-size: cover;
+    padding:3%;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    animation: moverFondo 10s ease-in-out infinite alternate;
+}
+@keyframes moverFondo{
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 2%;
+    background:  rgb(94, 141, 210); 
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20px;
+    max-height: 20vw;
+    min-height: 10vw;
+
+}
+
+.titulo h2 {
+    font-size: 28px;
+    color: #ececec;
+    margin-inline: 5px;
+    text-align: center;
+}
+
+.Formulario {
+    background-color:  #d9e8ff;
+    padding: 3%;
+    padding-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 15vw;
+}
+
+.item {
+    margin-bottom: 4%;
+}
+p {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color:rgb(16, 34, 88); ;
+}
+
+.item input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.item input:focus {
+    border-color:  rgb(94, 141, 210); 
+    outline: none;
+}
+
+.item input:hover{
+    box-shadow:0 0 10px   #001a9f;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
+.boton {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(94, 141, 210); 
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 20px;
+    max-width: 150px;
+    margin: 5px;
+}
+.boton:hover{
+    color: rgb(94, 141, 210); 
+    background-color: #ffffff;
+    box-shadow:0 0 5px   #001a9f;
+}
+select{
+    border: 1px solid #ccc;
+    display: flex;
+    justify-self:center;
+    border-color: transparent;
+    border-radius: 5px;
+    option{
+        border-color: transparent;
+    }
+}
+.selector {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color:#707070;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+input:focus, button:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.3); /* Borde tenue */
+}
+
+.selector:hover {
+    box-shadow: 0 0 5px   #001a9f;
+}
+
+a{
+    color:rgb(0, 140, 161);
+    text-align: center;
+}

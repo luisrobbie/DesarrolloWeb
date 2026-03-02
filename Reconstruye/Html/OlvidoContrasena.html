@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contraseña Olvidada</title>
+    <link rel="stylesheet" href="../CSS/Forms.css">
+    <script src="../javascript/FormularioDinamico.js"></script>
+</head>
+<body>
+    <div class="titulo">
+        <img src="../img/key_Icon.png" height="35px" style="margin-right:20px;">
+        <h2>Olvide Mi contraseña</h2>
+        
+    </div>
+    <div class="Formulario">
+        <form id="Form" method="post" action="../PHP/OlvideContraseña.php">
+            <div class="1raParte" id="1raParte">
+            <div class="item">
+                <label for="Telefono">teléfono:</label>
+                <input type="tel" id="telefono" name="telefono"  placeholder="Escriba su  teléfono" pattern="[0-9]{10}">
+            </div>
+            <label for="pregunta">Seleccione una pregunta de seguridad:</label>
+                <select id="pregunta"  name="pregunta" class="selector"  required>
+                    <option value="0" disabled selected>Seleccione una opción</option>
+                    <option value="1">¿Cúal es el nombre de tu mascota favorita?</option>
+                    <option value="2">¿Cuál es el nombre de tu mejor amigo?</option>
+                    <option value="3">¿En que ciudad nacio tu madre?</option>
+                    <option value="4">¿Cúal es el nombre de tu primer escuela?</option>
+                    <option value="5">¿Cúal es el nombre de tu abuelo materno?</option>
+                </select>
+                <div class="item">
+                    <label for="respuesta">Escriba su respuesta:</label>
+                    <input type="text" id="respuesta" name="respuesta"  required placeholder="respuesta" minlength="3" maxlength="50">
+                </div>
+                </div>
+                <div class="item">
+                <label for="Contraseña">Nueva Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required placeholder="Escriba su Nueva Contraseña" minlength="10" maxlength="50">
+                </div>
+            <div class="botones">
+                
+                <button type="button" onclick="window.location.href='Ingresar.html'" class="boton">regresar</button>
+                <input type="submit" value="Enviar" class="boton">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

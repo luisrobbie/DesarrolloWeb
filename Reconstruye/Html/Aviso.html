@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Privacidad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgba(0, 0, 0, 0.5);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url("../IMG/Fondo.png");
+            background-size: cover;
+        }
+        
+        .popup {
+            background: rgb(94, 141, 210);
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .popup hr {
+            border: none;
+            border-top: 2px solid #fff;
+            margin: 10px 0;
+        }
+        
+        .popup p {
+            text-align: justify;
+            color: white;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        
+        .button {
+            background: white;
+            color: rgb(94, 141, 210);
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 48%;
+        }
+        
+        .button:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <hr>
+        <p>Recopilamos información como nombre, correo electrónico, teléfono y datos relacionados 
+            con su consulta psicológica, con el objetivo de brindarle un servicio adecuado.</p>
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='../PHP/Registro.php'">Aceptar</button>
+            <button class="button" onclick="window.close()">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>
